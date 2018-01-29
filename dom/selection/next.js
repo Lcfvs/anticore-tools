@@ -1,4 +1,4 @@
-import {indexOf} from '../utils/array/indexOf';
+import {indexOf} from '../../utils/array/indexOf';
 import {start} from './start';
 
 export function next(node, targets) {

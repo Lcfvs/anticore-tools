@@ -1,4 +1,4 @@
-import {indexOf} from '../utils/array/indexOf';
+import {indexOf} from '../../utils/array/indexOf';
 import {all} from '../queries/all';
 
 export function matches(selector, node) {

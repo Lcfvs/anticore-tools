@@ -1,5 +1,5 @@
-import {slice} from '../utils/array/slice';
-import {indexOf} from '../utils/array/indexOf';
+import {slice} from '../../utils/array/slice';
+import {indexOf} from '../../utils/array/indexOf';
 
 export function nextSiblings(node) {
   let

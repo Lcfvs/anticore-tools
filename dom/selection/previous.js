@@ -1,4 +1,4 @@
-import {indexOf} from '../utils/array/indexOf';
+import {indexOf} from '../../utils/array/indexOf';
 import {end} from './end';
 
 export function previous(node, targets) {

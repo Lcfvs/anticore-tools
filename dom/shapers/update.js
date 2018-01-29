@@ -1,4 +1,4 @@
-import {isObject} from '../utils/object/isObject';
+import {isObject} from '../../utils/object/isObject';
 import {listen} from '../listeners/listen';
 
 const
