@@ -1,0 +1,16 @@
+{
+  "name": "anticore-dom",
+  "version": "1.0.0",
+  "description": "",
+  "repository": "https://github.com/Lcfvs/anticore-dom",
+  "main": "./public/js/dev/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lcf.vs <michael.rouges@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "anticore": "^1.9.1"
+  }
+}
