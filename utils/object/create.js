@@ -1,3 +1,3 @@
-import anticore from 'anticore';
-
-export const create = anticore.utils.create;
+export const create = function(method, prototype, descriptors) {
+  return method(prototype || null, descriptors);
+}.bind(null, Object.create);

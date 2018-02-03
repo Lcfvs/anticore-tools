@@ -6,4 +6,6 @@ export function insertAll(nodes, refNode, parent) {
   forEach(slice(nodes, 0), function (node) {
     insert(node, refNode, parent);
   });
+
+  return nodes;
 }

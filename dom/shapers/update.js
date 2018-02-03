@@ -1,23 +1,22 @@
 import {isObject} from '../../utils/object/isObject';
+import {keys} from '../../utils/object/keys';
 import {listen} from '../listeners/listen';
-
-const
-keys = Object.keys;
+import {forEach} from '../../utils/array/forEach';
 
 export function update(element, config) {
   if (isObject(config)) {
-    keys(config).forEach(function(name) {
+    forEach(keys(config), function(name) {
       let
       value = config[name];
 
       if (name.substr(0, 2) === 'on') {
         listen(name.substr(2).toLowerCase(), element, value);
       } else if (name === 'style' && isObject(value)) {
-        keys(value).forEach(function(name) {
+        forEach(keys(value), function(name) {
           element.style[name] = value[name];
         });
       } else if (name === 'dataset' && isObject(value)) {
-        keys(value).forEach(function(name) {
+        forEach(keys(value), function(name) {
           element.dataset[name] = value[name];
         });
       } else if (name === 'text') {

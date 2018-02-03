@@ -1,3 +1,5 @@
-import anticore from 'anticore';
+import {global} from '../../utils/global';
 
-export const all = anticore.utils.$$;
+export function all(selector, refNode) {
+  return (refNode || global.document).querySelectorAll(selector);
+}

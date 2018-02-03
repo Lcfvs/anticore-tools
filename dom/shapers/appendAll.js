@@ -6,4 +6,6 @@ export function appendAll(nodes, parent) {
   forEach(slice(nodes, 0), function (node) {
     append(node, parent);
   });
+
+  return nodes;
 }

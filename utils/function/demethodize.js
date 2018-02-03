@@ -1,3 +1,1 @@
-import anticore from 'anticore';
-
-export const demethodize = anticore.utils.demethodize;
+export const demethodize = Function.bind.bind(Function.call);

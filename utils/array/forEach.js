@@ -1,4 +1,3 @@
-import anticore from 'anticore';
+import {demethodize} from '../function/demethodize';
 
-export const
-forEach = anticore.utils.forEach;
+export const forEach = demethodize(Array.prototype.forEach);
